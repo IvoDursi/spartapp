@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:imgur_service/imgur_service.dart';
-import 'package:spartapp/home/home.dart';
-import 'package:spartapp/home/widget/popular_images_list.dart';
+import 'package:spart_app/home/home.dart';
+import 'package:spart_app/home/widget/popular_images_list.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       ),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Spartapp'),
+          title: const Text('spart_app'),
         ),
         body: PopularImagesList(),
       ),

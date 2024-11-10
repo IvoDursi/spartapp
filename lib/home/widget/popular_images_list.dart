@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:spartapp/home/home.dart';
+import 'package:spart_app/home/home.dart';
 
 class PopularImagesList extends StatefulWidget {
   const PopularImagesList({super.key});

@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:imgur_repository/imgur_repository.dart';
 import 'package:imgur_service/imgur_service.dart';
 import 'package:local_storage_service/local_storage_service.dart';
-import 'package:spartapp/home/home.dart';
-import 'package:spartapp/l10n/l10n.dart';
+import 'package:spart_app/home/home.dart';
+import 'package:spart_app/l10n/l10n.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -26,16 +26,19 @@ class App extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        theme: ThemeData(
-          appBarTheme: AppBarTheme(
-            backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          theme: ThemeData(
+            appBarTheme: AppBarTheme(
+              backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+            ),
+            useMaterial3: true,
           ),
-          useMaterial3: true,
-        ),
-        localizationsDelegates: AppLocalizations.localizationsDelegates,
-        supportedLocales: AppLocalizations.supportedLocales,
-        home: HomePage(),
-      ),
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
+          home: Scaffold(
+            appBar: AppBar(
+              title: Text('asdasdas'),
+            ),
+          )),
     );
   }
 }

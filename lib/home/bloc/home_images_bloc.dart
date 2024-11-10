@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:imgur_service/imgur_service.dart';
-import 'package:spartapp/home/bloc/home_images_event.dart';
-import 'package:spartapp/home/bloc/home_images_state.dart';
+import 'package:spart_app/home/bloc/home_images_event.dart';
+import 'package:spart_app/home/bloc/home_images_state.dart';
 
 class HomeImagesBloc extends Bloc<HomeImagesEvent, HomeImagesState> {
   HomeImagesBloc({
